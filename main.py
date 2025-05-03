@@ -63,16 +63,8 @@ while True:
             screen_y = (y / frame_h) * screen_h * 1.7
             pyautogui.moveTo(screen_x, screen_y, 0.1)
 
-            """
-            if mouse_move == 0: #selecting the first point to take as our follow-point but we could have said 1,2 or 3
-                screen_x = (x / frame_w) * screen_w
-                screen_y = (y / frame_h) * screen_h 
-                pyautogui.moveTo(screen_x, screen_y, 0.1)
-            """
+        #^^The camera frame is smaller than the device screen, so we have to scale up the mouse movements by the ratio of the sizes^^#
 
-        """The camera frame is smaller than the device screen, so we have to scale up the mouse movements by the ratio of the sizes^^"""
-
-                #pyautogui.moveTo(screen_x * 1.5, screen_y * 1.5)
 
 
 
